@@ -1,0 +1,12 @@
+<div class="container">
+    <h1 class="text-4xl font-extrabold text-gray-700">Match History</h1>
+  
+    <div class="flex flex-wrap flex-col md:flex-row items-stretch">
+      <ng-container *ngFor="let match of allMatch; let index = index">
+        <div class="w-full md:w-[33%] p-3">
+          <app-match-card [match]="match"></app-match-card>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+  
